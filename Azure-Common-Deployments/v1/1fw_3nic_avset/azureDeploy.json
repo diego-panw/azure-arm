@@ -125,6 +125,8 @@
       "defaultValue": "latest",
       "allowedValues": [
         "latest",
+        "10.2.0",
+        "10.1.5",
         "9.1.0",
         "9.0.9",
         "9.0.6",
