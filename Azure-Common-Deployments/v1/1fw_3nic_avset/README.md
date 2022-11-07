@@ -6,7 +6,7 @@
 
 ### Overview
 This template deploys the following into a new or existing VNET with 3 subnets:
-* 1 x VM-Series firewalls
+* 1 x VM-Series firewalls (updated to vmseries-flex offer)
     * 3 x Interfaces
         * management: `<fw_name>-nic0`
         * dataplane1: `<fw_name>-nic1`
@@ -33,17 +33,6 @@ Everything resource in the template is built strictly with variables.  The varia
 
 #### First Deployment
 Most deployment failures are due to conflicts with existing resources.  If this is your first time running the template, it is recommended to launch the template into a **new** resource group.  If you cannot deploy to a new resource group, it is highly recommended to use the `optional-Append String To Resources` parameter to append a string to all newly created resources.  This will avoid potential naming conflicts among any existing resources.
-
-**AZURE CHINA**
-<a href="https://portal.azure.cn/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%%2Fwwce%2Fazure-arm%2Fmaster%2FAzure-Common-Deployments%2Fv1%2F1fw_3nic_avset%2FazureDeploy.json" target="_blank">
-    <img src="http://azuredeploy.net/deploybutton.png"/>
-</a>
-</br>
-
-**AZURE GOV**
-<a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fwwce%2Fazure-arm%2Fmaster%2FAzure-Common-Deployments%2Fv1%2F1fw_3nic_avset%2FazureDeploy.json" target="_blank">
-    <img src="http://azuredeploy.net/AzureGov.png" />
-</a> 
 
 **AZURE COMMERCIAL**
 [<img src="http://azuredeploy.net/deploybutton.png"/>](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fdgonzali%2Fazure-arm%2Fmaster%2FAzure-Common-Deployments%2Fv1%2F1fw_3nic_avset%2FazureDeploy.json)
