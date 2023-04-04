@@ -32,6 +32,9 @@
     "subnetPrefix-Dataplane2": {
       "value": "10.0.2.0/24"
     },
+    "subnetPrefix-Dataplane3": {
+        "value": "10.0.3.0/24"
+    },
     "fW1-Name": {
       "value": "vmseries-fw-vm1"
     },
@@ -44,11 +47,14 @@
     "fW1-IPDataplane2": {
       "value": "10.0.2.4"
     },
+    "fW1-IPDataplane3": {
+        "value": "10.0.3.4"
+    },
     "licenseType": {
       "value": "byol"
     },
     "panosVersion": {
-      "value": "latest"
+      "value": "10.2.3"
     },
     "vmSize": {
       "value": "Standard_DS3_v2"
@@ -70,6 +76,9 @@
     },
     "applyPublicIPToDataplane1": {
       "value": "Yes"
+    },
+    "applyPublicIPToDataplane3": {
+        "value": "Yes"
     },
     "nsgName": {
       "value": "vmseries-nsg"
