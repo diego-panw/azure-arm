@@ -11,6 +11,7 @@ This template deploys the following into a new or existing VNET with 3 subnets:
         * management: `<fw_name>-nic0`
         * dataplane1: `<fw_name>-nic1`
         * dataplane2: `<fw_name>-nic2`
+        * dataplane3: `<fw_name>-nic3`
     * Managed Disks
     * BYOL/Bundle1/Bundle2 License
     * (Optional) Accelerated Networking
@@ -18,6 +19,7 @@ This template deploys the following into a new or existing VNET with 3 subnets:
     * (Optional) Public IPs for interfaces:
         * management: `<fw_name>-nic0-pip`
         * dataplane1: `<fw_name>-nic1-pip`
+        * dataplane3: `<fw_name>-nic3-pip`
 * 2 x Network Security Groups
     *  management: `<nsg_name>-mgmt`
     *  dataplane: `<nsg_name>-data`
