@@ -370,6 +370,7 @@
     "vnet_subnet0_cidr": "[parameters('subnetPrefix-Management')]",
     "vnet_subnet1_cidr": "[parameters('subnetPrefix-Dataplane1')]",
     "vnet_subnet2_cidr": "[parameters('subnetPrefix-Dataplane2')]",
+    "vnet_subnet3_cidr": "[parameters('subnetPrefix-Dataplane3')]",
 
     "COMMENT_avset": "AV SET NESTED TEMPLATE VARIABLES (L. 805-834)",
     "avset_sku": "Aligned",
