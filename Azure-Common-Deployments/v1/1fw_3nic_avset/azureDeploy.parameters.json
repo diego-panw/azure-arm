@@ -23,6 +23,9 @@
     "subnetName-Dataplane2": {
       "value": "trust-subnet"
     },
+    "subnetName-Dataplane3": {
+      "value": "untrust2-subnet"
+    },
     "subnetPrefix-Management": {
       "value": "10.0.0.0/24"
     },
