@@ -61,7 +61,7 @@
     },
     "subnetName-Dataplane3": {
         "type": "string",
-        "defaultValue": "trust-subnet",
+        "defaultValue": "untrust2-subnet",
         "metadata": {
           "description": "Enter a subnet name for the firewall's third dataplane interface."
         }
@@ -213,7 +213,7 @@
     },
     "acceleratedNetworking": {
       "type": "string",
-      "defaultValue": "enable",
+      "defaultValue": "enable (Only supported on PAN-OS 9.0 or greater)",
       "allowedValues": [
         "enable (Only supported on PAN-OS 9.0 or greater)",
         "disable"
