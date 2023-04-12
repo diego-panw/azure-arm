@@ -191,18 +191,18 @@
             }
         },
         "PANOSVersion": {
-            "type": "string",
-            "defaultValue": "latest",
-            "allowedValues": [
-                "latest",
-                "9.1.0",
-                "9.0.6",
-                "9.0.4",
-                "9.0.1"
-            ],
-            "metadata": {
-                "description": "Select the PAN-OS version to deploy.  Selecting 'Latest' deploys the latest available image on the Azure Marketplace."
-            }
+          "type": "string",
+          "defaultValue": "10.2.3",
+          "allowedValues": [
+            "latest",
+            "10.2.3",
+            "10.2.0",
+            "10.1.5",
+            "9.1.0"
+          ],
+          "metadata": {
+            "description": "Select the PAN-OS version to deploy.  Selecting 'Latest' deploys the latest available image on the Azure Marketplace."
+          }
         },
         "VMSize": {
             "type": "string",
@@ -379,7 +379,7 @@
         "global_fw_publisher": "paloaltonetworks",
         "global_fw_license": "[parameters('licenseType')]",
         "global_fw_version": "[if(equals(variables('global_fw_license'), 'bundle2-for-ms'), '8.1.00', parameters('PANOSVersion'))]",
-        "global_fw_product": "[if(equals(variables('global_fw_license'), 'bundle2-for-ms'), 'vmseries-forms', 'vmseries1')]",
+        "global_fw_product": "[if(equals(variables('global_fw_license'), 'bundle2-for-ms'), 'vmseries-forms', 'vmseries-flex')]",
         "global_fw_vmSize": "[parameters('VMSize')]",
         "global_fw_enableAcceleratedNetworking": "[if(equals(parameters('acceleratedNetworking'), 'enable (Only supported on PAN-OS 9.0 or greater)'), 'true', 'false')]",
         "global_fw_avset_option": "[parameters('availabilitySetOption')]",
