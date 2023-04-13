@@ -190,17 +190,14 @@
     },
     "PANOSVersion": {
       "type": "string",
-      "defaultValue": "latest",
+      "defaultValue": "10.2.3",
       "allowedValues": [
         "latest",
-        "8.1.0",
-        "8.0.0",
-        "7.1.1"
-      ],
-      "metadata": {
-        "description": "Select the PAN-OS version to deploy.  Selecting 'Latest' deploys the latest available image on the Azure Marketplace."
-      }
-    },
+        "10.2.3",
+        "10.2.0",
+        "10.1.5",
+        "9.1.0"
+    ],
     "VMSize": {
       "type": "string",
       "defaultValue": "Standard_DS3_v2",
@@ -375,13 +372,13 @@
     "global_fw_publisher": "paloaltonetworks",
     "global_fw_license": "[parameters('licenseType')]",
     "global_fw_version": "[parameters('PANOSVersion')]",
-    "global_fw_product": "vmseries1",
+    "global_fw_product": "vmseries-flex",
     "global_fw_vmSize": "[parameters('VMSize')]",
     "global_fw_enableAcceleratedNetworking": "[if(equals(parameters('acceleratedNetworking'), 'enable (Only supported on PAN-OS 9.0 or greater)'), 'true', 'false')]",
     "global_fw_avset_option": "[parameters('availabilitySetOption')]",
     "global_fw_avset_name": "[if(equals(parameters('availabilitySetOption'), 'Use existing availability set - Must be in firewall/main resource group'), parameters('availabilitySetName'), take(replace(concat(parameters('availabilitySetName'), variables('global_var_appendedString')), ' ', ''), 80))]",
     "global_fw_avset_id": { "id": "[resourceId('Microsoft.Compute/availabilitySets', variables('global_fw_avset_name'))]"},
-
+    
     "COMMENT_nsg": "NSG TEMPLATE VARIABLES",
     "nsg_mgmt_inbound_rule_name": "allow-inbound-https-ssh",
     "nsg_mgmt_inbound_rule_sourceAddress": "[parameters('NSGSourcePrefix')]",
