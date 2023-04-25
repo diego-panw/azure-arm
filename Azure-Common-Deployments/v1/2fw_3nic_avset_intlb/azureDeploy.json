@@ -190,14 +190,18 @@
     },
     "PANOSVersion": {
       "type": "string",
-      "defaultValue": "10.2.3",
+      "defaultValue": "latest",
       "allowedValues": [
         "latest",
         "10.2.3",
         "10.2.0",
         "10.1.5",
         "9.1.0"
-    ],
+      ],
+      "metadata": {
+        "description": "Select the PAN-OS version to deploy.  Selecting 'Latest' deploys the latest available image on the Azure Marketplace."
+      }
+    },
     "VMSize": {
       "type": "string",
       "defaultValue": "Standard_DS3_v2",
