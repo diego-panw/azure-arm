@@ -1,7 +1,7 @@
 ## 1 x VM-Series (4 NIC) updated by Diego 
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/wwce/azure-arm/master/Azure-Common-Deployments/v1/images/1fw_3nic_avset.png">
+<img src="https://github.com/diego-panw/azure-arm/blob/5e5f11930ad3ad598a1a16d70ab09ffee2b90bd7/Azure-Common-Deployments/v1/images/1fw_4nic_avset.png">
 </p>
 
 ### Overview
